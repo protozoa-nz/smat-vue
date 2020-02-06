@@ -1,5 +1,7 @@
 # smat-vue
 
+This is a prototype of a Vue interface for https://gitlab.com/smat-project/smat-be/-/blob/master/DOCS.md
+
 ## Project setup
 ```
 npm install
