@@ -53,7 +53,7 @@ export default {
   },
   watch: {
     query(newValue) {
-      console.log('[query]', newValue)
+      console.log("[query]", newValue);
       if (!newValue) return;
 
       const url = `https://smat-be.herokuapp.com/${newValue}`;
@@ -75,13 +75,13 @@ export default {
     /* chill version which only triggers 300ms of quiet */
     // read about debounce: https://css-tricks.com/debouncing-throttling-explained-examples/#article-header-id-0
     fetchData: debounce(function(url) {
-      console.log('[fetchData]', url)
+      console.log("[fetchData]", url);
 
       fetch(url)
         .then(response => response.json())
         .then(results => {
           // set the state
-          this.results = results
+          this.results = results;
         })
         .catch(err => console.error(err));
     }, 300)
